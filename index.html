@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Exercice 2</title>
+</head>
+<body>
+    <div id="clickMore">
+        <button id="buttonMore"> + </button>
+    </div>
+    <div id="clickLess">
+        <button id="buttonLess"> - </button>
+    </div>
+    <div id="number"></div>
+    <script>
+        var numberCount = 0;
+        $('#clickMore').on('click', () => {
+            numberCount++;
+            $('#number').text(' ' + numberCount);
+        });
+        $('#clickLess').on('click', () => {
+            numberCount--;
+            $('#number').text(' ' + numberCount)
+        });
+    </script>
+</body>
+</html>
