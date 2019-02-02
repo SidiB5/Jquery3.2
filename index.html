@@ -16,14 +16,16 @@
     </div>
     <div id="number"></div>
     <script>
-        var numberCount = 0;
-        $('#clickMore').on('click', () => {
-            numberCount++;
-            $('#number').text(' ' + numberCount);
-        });
-        $('#clickLess').on('click', () => {
-            numberCount--;
-            $('#number').text(' ' + numberCount)
+        $(document).ready(() => {
+            var numberCount = 0;
+            $('#clickMore').on('click', () => {
+                numberCount++;
+                $('#number').text(' ' + numberCount);
+            });
+            $('#clickLess').on('click', () => {
+                numberCount--;
+                $('#number').text(' ' + numberCount)
+            });
         });
     </script>
 </body>
